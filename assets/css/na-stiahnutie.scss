@@ -1,0 +1,79 @@
+@import "base";
+body {
+  main {
+    h1 {
+      margin-bottom: 3.35vw;
+    }
+    .item-list {
+      .item {
+        border: 2px solid $midGrey;
+        border-radius: $px5;
+        background: white;
+        margin-bottom: $px20;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .button {
+          width: 100%;
+          height: 100%;
+          appearance: none;
+          border: 0;
+          background: transparent;
+          height: 3.47vw;
+          padding: 0 $px20 0 $px40;
+          .button-text {
+              font-size: $px18;
+          }
+          &::after {
+            font-family: "Font Awesome 5 Free";
+          	content: "\f067";
+            font-weight: bold;
+            margin-left: auto;
+          }
+          &[aria-expanded=true] {
+            &::after {
+              color: #CE1531;
+            	content: "\f00d";
+            }
+          }
+        }
+        .downloads {
+          .row {
+            padding: $px38 4.28vw 2.43vw 4.97vw;
+            .col-6 {
+              padding: 0 $px10 $px20;
+              .download-link {
+                background-color: $paleBlue;
+                height: 4.63vw;
+                border-radius: $px10;
+                border: 2px solid transparent;
+                padding: 0 1.96vw 0 1.27vw;
+                text-decoration: none;
+                .pdf-icon {
+                  width: $px25;
+                  margin-right: $px18;
+                }
+                span {
+                  color: $deepBlue;
+                  font-size: $px18;
+                }
+                .down-icon {
+                  visibility: hidden;
+                  margin-left: auto;
+                  width: $px16;
+                }
+                &:hover {
+                  border-color: $deepBlue;
+                  .down-icon {
+                    visibility: visible;
+                  }
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

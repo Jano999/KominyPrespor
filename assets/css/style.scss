@@ -1,0 +1,59 @@
+@import "base";
+//STYLES SHARED WITH ALL THE PAGES
+body {
+  main {
+    section {
+      padding: 0 12.384vw 0;
+    }
+  }
+  //FOOTER STYLES
+  footer {
+    .body {
+      background-color: $lightGrey;
+      border-radius: $px10;
+      height: 26.85vw;
+      padding: 5.78vw 12.384vw;
+      h4, p, a {
+        font-size: $px14;
+        line-height: 1.5vw;
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .phone-link, .map-link {
+        color: $deepBlue;
+      }
+      .phone-link {
+        font-size: $px18;
+      }
+      .map-link {
+        text-decoration: underline;
+      }
+    }
+    .bottom-links {
+      height: 4.745vw;
+      padding: 0 12.384vw;
+      p {
+        margin-bottom: 0;
+        font-size: $px12;
+      }
+      div {
+        margin-left: auto;
+        a {
+          color: black;
+          font-size: $px12;
+          text-decoration: none;
+          margin: 0 $px10;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

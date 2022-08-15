@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAoCA,KAAM,CACJ,WAAW,CAAE,IAAI,CAEnB,KAAM,CACJ,OAAO,CAAE,IAAI,CAEf,cAAe,CACb,WAAW,CAAE,MAAM,CAErB,cAAe,CACb,eAAe,CAAE,MAAM,CAEzB,YAAa,CACX,SAAS,CAAE,MAAM,CC9Cf,YAAG,CACD,UAAU,CAAE,KAAK,CACjB,SAAS,CDqBR,OAAO,CCnBV,WAAE,CACA,SAAS,CDaR,MAAO,CCXV,wBAAM,CACJ,aAAa,CDiBZ,OAAO",
+"sources": ["_base.scss","vseobecne-obchodne-podmienky.scss"],
+"names": [],
+"file": "vseobecne-obchodne-podmienky.css"
+}

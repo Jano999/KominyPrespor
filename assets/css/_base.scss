@@ -1,0 +1,51 @@
+//COLORS
+$mainYellow: #F5D742;
+$deepBlue: #001E8D;
+$red: #ED1D24;
+$lightGrey: #F6F6F6;
+$midGrey: #DEDEDE;
+$blogGrey: #E1E1E1;
+$paleBlue: #EBEFFF;
+
+
+
+//FONTS
+$mainFont: "OpenSans";
+
+//FONT SIZES (RESPONSIVE)
+$px5: 0.29vw;
+$px10: 0.57vw;
+$px12: 0.69vw;
+$px13: 0.75vw;
+$px14: 0.81vw;
+$px15: 0.86vw;
+$px16: 0.926vw;
+$px18: 1vw;
+$px19: 1.1vw;
+$px20: 1.157vw;
+$px23: 1.33vw;
+$px24: 1.388vw;
+$px25: 1.446vw;
+$px30: 1.736vw;
+$px38: 2.2vw;
+$px40: 2.314vw;
+$px45: 2.6vw;
+
+
+
+//USEFUL STYLES
+.bold {
+  font-weight: bold;
+}
+.flex {
+  display: flex;
+}
+.flex-center-v {
+  align-items: center;
+}
+.flex-center-h {
+  justify-content: center;
+}
+.flex-column {
+  flex-flow: column;
+}

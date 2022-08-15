@@ -1,0 +1,225 @@
+@import "base";
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: $mainFont;
+    font-weight: 400;
+    font-style: normal;
+    scroll-behavior: smooth;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-display: swap;
+}
+
+
+
+
+
+html {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+body {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    #navigation, main, footer{
+      padding: 0 3.4vw;
+    }
+    #navigation {
+      display: flex;
+      height: 3.47vw;
+      font-size: $px14;
+      position: fixed;
+      background-color: white;
+      width: 100%;
+      z-index: 100;
+      .logo {
+        display: inline-block;
+        width: 12.55vw;
+        img {
+          width: 100%;
+        }
+      }
+      .links {
+        margin-left: 2.9vw;
+        a {
+          display: inline-block;
+          height: 100%;
+          margin: 0 0.575vw;
+          text-decoration: none;
+          color: black;
+          padding: 0 0.69vw;
+          line-height: 3.47vw;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          &:hover, &.active {
+            border-bottom: 3px solid $deepBlue;
+          }
+          &.active {
+            color: $deepBlue;
+            font-weight: bold;
+          }
+        }
+      }
+      .help-button {
+        background-color: $deepBlue;
+        width: 8.9vw;
+        height: 2.3vw;
+        display: flex;
+        align-items: center;
+        border: 0;
+        border-radius: $px30;
+        align-self: center;
+        margin-left: auto;
+        img {
+          height: 1.446vw;
+          margin: 0 0.52vw;
+        }
+        span {
+          color: white;
+        }
+      }
+    }
+
+    main{
+      padding-top: 3.47vw;
+      #main-banner {
+        background-color: $mainYellow;
+        border-radius: 0 0 $px20 $px20;
+      }
+      //styles for homepage
+      &#homepage-main{
+        #main-banner {
+          height: 37.61vw;
+          padding: 0;
+          margin-bottom: 4vw;
+          .container-fluid, .row, .left, .right, .img-container, .img-container img {
+            height: 100%;
+          }
+          .left, .right {
+            padding: 0;
+          }
+          .left{
+            * {
+               margin-left: 6.2vw;
+            }
+            span {
+              margin-top: 10.53vw;
+              color: $deepBlue;
+              font-size: $px14;
+              display: inline-block;
+            }
+            h1 {
+              margin-top: 1.5vw;
+              font-size: $px45;
+            }
+          }
+          .right {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            .img-container img {
+              height: 100%;
+              position: absolute;
+              right: 0;
+            }
+            .video-button {
+              position: absolute;
+              bottom: $px40;
+              left: $px40;
+              button {
+                  appearance: none;
+                  background-color: $mainYellow;
+                  width: 5.78vw;
+                  height: 5.78vw;
+                  border-radius: 50%;
+                  margin-right: $px14;
+                  border: 0;
+                img {
+                    width: 2.4vw;
+                }
+              }
+              span {
+                display: inline-block;
+                color: $mainYellow;
+                font-size: $px14;
+              }
+            }
+          }
+        }
+      }
+      //kominy rozcestnik
+      &#kominy-main {
+        #main-banner {
+          height: 34.72vw;
+          padding: 0;
+          margin-bottom: 5vw;
+          .container-fluid, .row, .left, .right, .img-container, .img-container img {
+            height: 100%;
+          }
+          .left {
+            padding: 5.32vw 0 0 12.5VW;
+            h1 {
+              margin-bottom: 4vw;
+              font-size: $px45;
+            }
+            p {
+              font-size: $px18;
+              width: 70%;
+            }
+          }
+          .right {
+            position: relative;
+            .chimney {
+              position: absolute;
+              height: 92%;
+              bottom: -0.29vw;
+              left: 4.45vw;
+            }
+            .logo {
+              position: absolute;
+              height: 27%;
+              bottom: -2.2vw;
+            }
+          }
+        }
+      }
+
+      &#vop, &#na-stiahnutie {
+        margin-bottom: $px20;
+        background-color: $lightGrey;
+        .no-main-banner {
+          padding-top: 4.34vw;
+          padding-bottom: 4.34vw;
+          h1 {
+            font-size: $px45;
+          }
+        }
+      }
+    }
+  }

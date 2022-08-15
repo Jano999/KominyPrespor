@@ -1,0 +1,348 @@
+@import "base";
+//HOMEPAGE STYLES
+body {
+  main {
+    section{
+      &#hp-showcase {
+        .text {
+          position: relative;
+          p {
+            font-size: $px30;
+            margin-bottom: 3.7vw;
+          }
+          .brush {
+            position: absolute;
+            width: 15.9vw;
+            height: $px10;
+            bottom: 0;
+            right: calc(25% - 30px);
+            background: $mainYellow;
+            filter: blur($px10);
+          }
+
+        }
+        .showcase-items {
+            .showcase-item {
+              border: 2px solid $midGrey;
+              border-radius: $px10;
+              width: 21.5vw;
+              height: 21.5vw;
+              padding: 0.925vw 1.15vw $px30 $px13;
+              margin: 0 auto;
+              &.highlight {
+                border-color: $mainYellow;
+              }
+              &:first-child {
+                margin-left: 0;
+              }
+              &:last-child {
+                margin-right: 0;
+              }
+              .head {
+                align-items: center;
+                .logo {
+                  height: 2.14vw;
+                }
+                .top {
+                  width: $px40;
+                  height: $px20;
+                  margin-left: auto;
+                  font-size: $px13;
+                  background-color: $red;
+                  color: white;
+                  border-radius: $px15;
+                  display: inline-block;
+                }
+              }
+              .body {
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                img {
+                  height: 11vw;
+                }
+              }
+              .bottom {
+                .button {
+                  display: inline-block;
+                  margin: auto;
+                  height: 2.89vw;
+                  line-height: 2.89vw;
+                  width: 15vw;
+                  background-color: $mainYellow;
+                  border-radius: $px30;
+                  color: black;
+                  text-decoration: none;
+                  font-size: $px18;
+                }
+              }
+            }
+
+        }
+        .showcase-link {
+          padding-top: $px20;
+          a {
+            font-size: $px14;
+            color: $deepBlue;
+          }
+        }
+      }
+      &#benefits {
+        padding-top: 4.166vw;
+        padding-bottom: 5.15vw;
+        .col-6 {
+          padding: 0;
+        }
+        h2 {
+          font-size: $px30;
+          margin-bottom: 5.5vw;
+        }
+        .benefit {
+          padding: 0 0 0 1.62vw;
+          height: 6.944vw;
+          border-left: 3px solid $deepBlue;
+          margin-bottom: 1.85vw;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          h3 {
+            font-size: $px24;
+            color: $deepBlue;
+          }
+          p {
+            font-size: $px16;
+            margin-bottom: 0;
+          }
+        }
+        .side-image {
+          width: 100%;
+        }
+      }
+      &#hp-blog {
+        padding-bottom: 6.36vw;
+        .blog-link {
+          text-decoration: none;
+          line-height: $px20;
+          .icon {
+            margin-right: $px12;
+            height: $px20;
+          }
+          span {
+            font-size: $px14;
+            text-transform: uppercase;
+            color: black;
+          }
+        }
+        .post-text {
+          position: absolute;
+          bottom: $px20;
+          left: $px20;
+          height: 13.88vw;
+          border-radius: $px10;
+          width: 26.6vw;
+          padding: 2vw 2.2vw 2.2vw;
+          h3 {
+            font-size: $px24;
+            line-height: 1.9vw;
+          }
+          .blog-link {
+            margin-top: auto;
+          }
+        }
+        .main-post {
+          height: 30vw;
+          background-color: $blogGrey;
+          border-radius: $px10;
+          position: relative;
+          margin-bottom: 6vw;
+          .post-text {
+            left: auto;
+            right: $px20;
+            background-color: $mainYellow;
+            h3 {
+              color: black;
+            }
+          }
+        }
+        .blog-text {
+          padding-bottom: 2.2vw;
+          h2 {
+            margin-bottom: 0;
+            font-size: $px30;
+          }
+          .blog-link {
+            margin-left: auto;
+          }
+        }
+        .post {
+          background-color: $blogGrey;
+          border-radius: $px10;
+          width: 33vw;
+          height: 33vw;
+          position: relative;
+          margin: auto;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          .post-text {
+              background-color: $deepBlue;
+              h3 {
+                color: white;
+              }
+              .blog-link {
+                .icon {
+                  filter: brightness(0) saturate(100%) invert(64%) sepia(86%) saturate(337%) hue-rotate(10deg) brightness(114%) contrast(92%);
+                }
+                span {
+                  color: $mainYellow;
+                }
+              }
+          }
+        }
+      }
+      &#hp-contact {
+        padding-bottom: 4.166vw;
+        h2 {
+          margin-bottom: 1.5625vw;
+          font-size: $px30;
+        }
+        .left {
+          width: 27.77vw;
+          .downloads {
+            .download-link {
+              width: 100%;
+              height: 4.63vw;
+              background-color: $paleBlue;
+              border-radius: $px10;
+              border: 2px solid transparent;
+              padding: 0 1.96vw 0 1.27vw;
+              text-decoration: none;
+              margin-bottom: $px20;
+              .pdf-icon {
+                width: $px25;
+                margin-right: $px18;
+              }
+              span {
+                color: $deepBlue;
+                font-size: $px18;
+              }
+              .down-icon {
+                visibility: hidden;
+                margin-left: auto;
+                width: $px16;
+              }
+              &:hover {
+                border-color: $deepBlue;
+                .down-icon {
+                  visibility: visible;
+                }
+              }
+            }
+          }
+          .downloads-page-link {
+            margin-top: 2.14vw;
+            width: 100%;
+            height: 2.9vw;
+            background-color: $deepBlue;
+            border-radius: $px30;
+            color: white;
+            text-decoration: none;
+            font-size: $px18;
+          }
+        }
+        .right {
+          border-radius: $px10;
+          background-color: $mainYellow;
+          height: 42vw;
+          width: 33vw;
+          margin-left: auto;
+          position: relative;
+          padding: 2vw 3.47vw 0 6.94vw;
+          .question-mark {
+            position: absolute;
+            width: 3.47vw;
+            height: 3.47vw;
+            border-radius: 50%;
+            background-color: $deepBlue;
+            left: 2.31vw;
+            top: 2.31vw;
+            img {
+              width: 2.14vw;
+              height: 2.14vw;
+              filter: brightness(0) saturate(100%) invert(64%) sepia(86%) saturate(337%) hue-rotate(10deg) brightness(114%) contrast(92%);
+            }
+          }
+          .bubble-head {
+            width: 8.97vw;
+            height: 3.82vw;
+            border-radius: $px20 $px20 $px20 $px5;
+            background-color: white;
+            font-size: $px18;
+            box-shadow: 0 $px10 $px10 rgba(0, 0, 0, 0.2);
+            margin-bottom: $px10;
+          }
+          .bubble-body {
+            padding: $px10 $px10 $px10 $px19;
+            font-size: $px16;
+            background-color: white;
+            box-shadow: 0 $px10 $px10 rgba(0, 0, 0, 0.2);
+            border-radius: $px5 $px20 $px20 $px20;
+            margin-bottom: $px16;
+          }
+          form {
+            padding: $px23 $px25;
+            background-color: white;
+            box-shadow: 0 $px10 $px10 rgba(0, 0, 0, 0.2);
+            border-radius: $px5 $px20 $px20 $px20;
+            margin-bottom: $px16;
+            .input-group {
+              label, input, textarea {
+                display: inline-block;
+                width: 100%;
+                font-size: $px16;
+                margin-bottom: $px14;
+              }
+              input[type="text"], textarea {
+                appearance: none;
+                border: 1px solid $deepBlue;
+                border-radius: $px5;
+              }
+              input[type="text"] {
+                height: 2.315vw;
+                padding: 0 $px13;
+              }
+              textarea {
+                height: 5.78vw;
+                padding: $px13;
+                resize: none;
+              }
+            }
+            #submit {
+              appearance: none;
+              width: 100%;
+              height: 2.9vw;
+              background-color: $deepBlue;
+              border-radius: $px30;
+              color: white;
+              text-decoration: none;
+              font-size: $px18;
+              border: 0;
+            }
+          }
+          .disclaimer {
+            font-size: $px14;
+            padding-left: $px20;
+            a {
+              color: $deepBlue;
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+}

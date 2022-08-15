@@ -1,0 +1,96 @@
+@import "base";
+//HOMEPAGE STYLES
+body {
+  main {
+    section{
+      &#chimneys-list {
+        padding-bottom: $px23;
+        .chimney {
+          border: 2px solid $midGrey;
+          border-radius: $px10;
+          width: 21.5vw;
+          height: auto;
+          padding: 0.925vw 1.15vw 1.736vw 0.75vw;
+          margin: 0 auto $px20;
+          padding: $px23 $px20 $px25 $px20;
+          position: relative;
+          &.highlight {
+            border-color: $mainYellow;
+          }
+          .category-img {
+            height: 2.77vw;
+            position: absolute;
+            right: $px20;
+          }
+          .badges {
+            position: absolute;
+            width: $px45;
+            span {
+              height: $px20;
+              border-radius: $px15;
+              margin-bottom: $px5;
+              font-size: $px13;
+              width: 100%;
+              &.v140 {
+                background-color: #FFEFA1;
+              }
+              &.v160 {
+                background-color: #F5D742;
+              }
+              &.v180 {
+                background-color: #FFB800;
+              }
+              &.v200 {
+                background-color: #FF9900;
+              }
+              &.v250{
+                background-color: #FF5C00;
+                color: white;
+              }
+              &.v300 {
+                background-color: #F54242;
+                color: white;
+              }
+            }
+          }
+          .chimney-img {
+            height: 12.45vw;
+            margin: 2vw 0 0.81vw;
+            img {
+              max-width: 70%;
+              &.sm {
+                max-height: 70%;
+              }
+              &.md {
+                max-height: 85%;
+              }
+              &.lg {
+                max-height: 100%;
+              }
+            }
+          }
+          p {
+            font-size: $px16;
+            margin-bottom: $px30;
+          }
+          h2,.category {
+            font-size: $px18;
+            padding-right: 10%;
+          }
+          .page-button {
+            margin-top: auto;
+            display: inline-block;
+            height: 2.89vw;
+            line-height: 2.89vw;
+            width: 100%;
+            background-color: $mainYellow;
+            border-radius: $px30;
+            color: black;
+            text-decoration: none;
+            font-size: $px18;
+          }
+        }
+      }
+    }
+  }
+}

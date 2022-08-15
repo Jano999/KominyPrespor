@@ -1,0 +1,15 @@
+@import "base";
+body {
+  main {
+    h2 {
+      margin-top: 6.6vw;
+      font-size: $px24;
+    }
+    p {
+      font-size: $px16;
+    }
+    h2, p {
+      margin-bottom: $px30;
+    }
+  }
+}
